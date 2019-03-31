@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* prova che il font venga adattato */
+        body {
+            font: 300 1.2rem Verdana;
+        }
+
+        /* common */
+        .btn {
+            box-sizing: border-box;
+        }
+
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            font: inherit;
+            padding: 8px 16px;
+            margin: 0 6px 8px;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn.disabled {
+            pointer-events: none;
+        }
+
+        /* color it */
+        .btn.disabled {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .btn:focus {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .btn {
+            background-color: rgba(0,0,0,0.3);
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="btn disabled">a</a>
+        <input type="button" value="input" class="btn">
+        <button class="btn">button</button>
+    </div>
+</body>
+</html>

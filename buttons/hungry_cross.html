@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* solo per mettere il pulsante al centro */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* il pulsante */
+        .btn,
+        .btn-icon,
+        .btn-bar {
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            background-color: #a1a1a1;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .btn-bar {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #000;
+            position: absolute;
+            
+            opacity: 1;
+            transform: rotate(0);
+            transition: .25s linear;
+        }
+
+        .btn-bar:nth-child(1) {
+            top: 0;
+        }
+
+        .btn-bar:nth-child(2),
+        .btn-bar:nth-child(3) {
+            top: 7px;
+        }
+
+        .btn-bar:nth-child(4) {
+            top: 14px;
+        }
+
+        .btn.active .btn-bar:nth-child(1),
+        .btn.active .btn-bar:nth-child(4) {
+            opacity: 0;
+        }
+
+        .btn.active .btn-bar:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        .btn.active .btn-bar:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn">
+        <div class="btn-icon">
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        </div>
+    </a>
+
+    <script>
+        var btn = document.querySelector('.btn');
+        var clazz = 'active';
+
+        function hasClass(el, clazz)
+        {
+            return el.classList.contains(clazz);
+        }
+
+        function addClass(el, clazz)
+        {
+            el.classList.add(clazz);
+        }
+
+        function removeClass(el, clazz)
+        {
+            el.classList.remove(clazz);
+        }
+
+        function handleClick(evt)
+        {
+            if(hasClass(btn, clazz))
+            {
+                removeClass(btn, clazz);
+            }
+            else
+            {
+                addClass(btn, clazz);
+            }
+        }
+
+        if(btn)
+        {
+            btn.addEventListener('click', handleClick);
+        }
+    </script>
+</body>
+</html>
