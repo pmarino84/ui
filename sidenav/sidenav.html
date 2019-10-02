@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../buttons/button.css">
+    <link rel="stylesheet" href="./sidenav.css">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav sidenav--left sidenav--opened sidenav--push">
+        <div class="sidenav__section">
+                <button class="btn" id="closer">X</button>
+        </div>
+
+        <div class="sidenav__section">
+            <h4 class="sidenav__section__title">Section 1</h4>
+            <ul class="sidenav__section__menu">
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 1</div>
+                </li>
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 2</div>
+                </li>
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 3</div>
+                </li>
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 4</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidenav__divider"></div>
+
+        <div class="sidenav__section">
+            <h4 class="sidenav__section__title">Section 2</h4>
+            <ul class="sidenav__section__menu">
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 1</div>
+                </li>
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 2</div>
+                </li>
+                <li class="sidenav__section__menu-item">
+                    <div class="sidenav__section__menu-item__inner">Item 3</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main class="content">
+        <button class="btn" id="toggler">toggle sidenav</button>
+    </main>
+
+    <script src="./sidenav.js"></script>
+</body>
+
+</html>
