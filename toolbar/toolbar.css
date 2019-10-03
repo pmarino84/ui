@@ -1,0 +1,34 @@
+.toolbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 64px;
+}
+
+.toolbar--tall {
+    min-height: 128px;
+    height: 128px;
+    max-height: 128px;
+}
+
+.toolbar__tools {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    max-height: 64px;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.toolbar_title {
+    margin: 0;
+}
+
+/* color it */
+.toolbar {
+    background-color: rgba(0,0,0,0.1);
+}
