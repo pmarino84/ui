@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+  /* prova che il font venga adattato */
+  font: 300 1.2rem Verdana;
+}

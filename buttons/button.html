@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Button</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button</title>
 
-    <link rel="stylesheet" href="./button.css">
-
-    <style>
-        /* prova che il font venga adattato */
-        body {
-            font: 300 1.2rem Verdana;
-        }
-    </style>
+  <link rel="stylesheet" href="../commons/override.css">
+  <link rel="stylesheet" href="../commons/layout.css">
+  <link rel="stylesheet" href="../commons/theme-light.css">
+  <link rel="stylesheet" href="./button.css">
 </head>
+
 <body>
+
+  <div class="container container--centered">
+    <button class="btn">solo</button>
+
     <div class="btn-group btn-group--end">
-        <a href="#" class="btn disabled">a</a>
-        <input type="button" value="input" class="btn">
-        <button class="btn">button</button>
+      <a href="#" class="btn disabled">a</a>
+      <input type="button" value="input" class="btn">
+      <button class="btn">button</button>
     </div>
+
+    <button class="btn btn-icon">
+      <span class="icon">
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+      </span>
+    </button>
+  </div>
+
+  <script src="./button.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #ffffff;
+  --primary-text-color: #000000;
+
+  --primary-accent-color: #212121;
+
+  --disabled-color: rgba(0, 0, 0, .1);
+  --disabled-text-color: rgba(255, 255, 255, .6);
+
+  --overlay-color: rgba(255, 255, 255, .4);
+  --overlay-text-color: #000000;
+  
+  --overlay-dark-color: rgba(0, 0, 0, .4);
+  --overlay-dark-text-color: #ffffff;
+
+  --come-lo-chiamo: #777777;
+}
