@@ -31,7 +31,8 @@
 } */
 
 .btn:hover {
-  background-color: var(--overlay-dark-color);
+  background-color: var(--overlay-color);
+  color: var(--overlay-text-color);
 }
 
 .btn-group {

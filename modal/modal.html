@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../commons/override.css">
+  <link rel="stylesheet" href="../commons/layout.css">
+  <link rel="stylesheet" href="../buttons/button.css">
+  <link rel="stylesheet" href="./modal.css">
+  <link rel="stylesheet" href="../commons/theme-light.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="page-title">Modal show case</h1>
+
+    <div class="container container--centered">
+      <button class="btn primary" id="opener">open</button>
+  
+      <div class="modal-wrapper fade-top" id="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal">
+          <header class="modal__header">
+            <h2 class="modal__title">Title</h2>
+            <span class="flex"></span>
+            <button class="btn btn-icon primary modal__btn-closer">
+              <span class="icon">X</span>
+            </button>
+          </header>
+          <div class="modal__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Fugiat accusantium corrupti soluta deleniti dolorem,
+            facere laboriosam deserunt quaerat,
+            quidem enim eum? Eum perferendis officiis minima praesentium sunt,
+            mollitia hic voluptatum!
+          </div>
+          <div class="modal__actions">
+            <button class="btn primary btn-success">ok</button>
+            <button class="btn primary btn-cancel">cancel</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./modal.js"></script>
+
+</body>
+
+</html>
