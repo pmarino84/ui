@@ -5,10 +5,12 @@
   --primary-accent-color: #212121;
 
   --disabled-color: rgba(0, 0, 0, .1);
-  --disabled-text-color: rgba(255, 255, 255, .6);
+  --disabled-text-color: rgba(255, 255, 255, .3);
 
-  --overlay-color: rgba(0, 0, 0, .05);
+  --overlay-color: rgba(0, 0, 0, 0.05);
   --overlay-text-color: #777777;
+
+  --overlay-light-color: rgba(255, 255, 255, .8);
   
   --overlay-dark-color: rgba(0, 0, 0, .7);
   --overlay-dark-text-color: #ffffff;
