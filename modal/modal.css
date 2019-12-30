@@ -96,7 +96,8 @@
 .fade-top,
 .fade-right,
 .fade-bottom,
-.fade-left {
+.fade-left,
+.scale-in {
   transition: opacity .7s linear, visibility 1s linear;
 }
 
@@ -141,4 +142,13 @@
 
 .fade-left.open .modal {
   left: 50%;
+}
+
+.scale-in .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1s ease-in-out;
+}
+
+.scale-in.open .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
