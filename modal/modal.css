@@ -93,62 +93,62 @@
   z-index: 1;
 }
 
-.fade-top,
-.fade-right,
-.fade-bottom,
-.fade-left,
-.scale-in {
+.modal--effect-fade-top,
+.modal--effect-fade-right,
+.modal--effect-fade-bottom,
+.modal--effect-fade-left,
+.modal--effect-scale {
   transition: opacity .7s linear, visibility 1s linear;
 }
 
-.fade-top .modal,
-.fade-right .modal,
-.fade-bottom .modal,
-.fade-left .modal {
+.modal--effect-fade-top .modal,
+.modal--effect-fade-right .modal,
+.modal--effect-fade-bottom .modal,
+.modal--effect-fade-left .modal {
   transition: all 1s linear;
 }
 
-.fade-top .modal {
+.modal--effect-fade-top .modal {
   top: -100%;
 }
 
-.fade-top.open .modal {
+.modal--effect-fade-top.open .modal {
   top: 50%;
 }
 
-.fade-right .modal {
+.modal--effect-fade-right .modal {
   left: unset;
   right: -100%;
   transform: translate(50%, -50%);
 }
 
-.fade-right.open .modal {
+.modal--effect-fade-right.open .modal {
   right: 50%;
 }
 
-.fade-bottom .modal {
+.modal--effect-fade-bottom .modal {
   top: unset;
   bottom: -100%;
   transform: translate(-50%, 50%);
 }
 
-.fade-bottom.open .modal {
+.modal--effect-fade-bottom.open .modal {
   bottom: 50%;
 }
 
-.fade-left .modal {
+.modal--effect-fade-left .modal {
   left: -100%;
 }
 
-.fade-left.open .modal {
+.modal--effect-fade-left.open .modal {
   left: 50%;
 }
 
-.scale-in .modal {
+.modal--effect-scale .modal {
   transform: translate(-50%, -50%) scale(0);
   transition: transform 1s ease-in-out;
 }
 
-.scale-in.open .modal {
+.modal--effect-scale.open .modal {
   transform: translate(-50%, -50%) scale(1);
 }

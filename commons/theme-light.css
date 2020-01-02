@@ -2,7 +2,9 @@
   --primary-color: #ffffff;
   --primary-text-color: #777777;
 
-  --primary-accent-color: #212121;
+  --primary-accent-color: rgba(33, 33, 33, 1);
+  --primary-accent-color-hover: rgba(33, 33, 33, .3);
+  --primary-accent-text-color: #ffffff;
 
   --disabled-color: rgba(0, 0, 0, .1);
   --disabled-text-color: rgba(255, 255, 255, .9);
@@ -19,4 +21,13 @@
 .primary {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
+}
+
+.accent {
+  background-color: var(--primary-accent-color);
+  color: var(--primary-accent-text-color)
+}
+
+.accent:hover {
+  background-color: var(--primary-accent-color-hover);
 }

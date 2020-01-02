@@ -1,5 +1,5 @@
 /* Gestisco il click sul pulsante con l'icona hamburger */
-var btn = document.querySelector('.btn.btn-icon');
+var btn = document.querySelector('.btn.btn--icon');
 var clazz = 'active';
 
 function hasClass(el, clazz) {
