@@ -31,7 +31,7 @@ if (btn) {
 let _forEach = (arr, cb) => Array.prototype.forEach.call(arr, cb);
 
 function rippleEffectEnd({ target }) {
-  console.log("Transition end: ", target);
+  /* console.log("Transition end: ", target); */
   target.classList.remove('active');
 }
 
