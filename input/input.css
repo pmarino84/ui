@@ -1,0 +1,67 @@
+.input-container,
+.input,
+.input-placeholder,
+.input-placeholder__text {
+  box-sizing: border-box;
+}
+
+.input-container {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  overflow-x: hidden;
+}
+
+.input {
+  position: relative;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+
+.input-placeholder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 2px solid #777777;
+}
+
+.input-placeholder::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: -100%;
+  bottom: -3px;
+  width: 100%;
+  height: 4px;
+  background-color: #1b3bca;
+  transition: left .5s ease;
+}
+
+.input-placeholder__text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.input:focus + .input-placeholder .input-placeholder__text,
+.input:required:valid + .input-placeholder .input-placeholder__text,
+.input:optional:not(.input--empty) + .input-placeholder .input-placeholder__text {
+  color: #1b3bca;
+  bottom: 60%;
+  font-size: .75rem;
+}
+
+.input:focus + .input-placeholder::after,
+.input:required:valid + .input-placeholder::after {
+  left: 0;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Input</title>
+  
+  <link rel="stylesheet" href="../commons/override.css">
+  <link rel="stylesheet" href="../commons/layout.css">
+  <link rel="stylesheet" href="../commons/theme-light.css">
+  <link rel="stylesheet" href="./input.css">
+</head>
+<body>
+  <div class="container container--centered-children">
+    <div class="input-container">
+      <input type="text" class="input" autocomplete="off" name="field" required>
+      <label for="field" class="input-placeholder">
+        <span class="input-placeholder__text">Field</span>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    var input = document.querySelector('.input');
+    let value = input.value;
+    if(!value) {
+      input.classList.add('input--empty');
+    }
+
+    // TODO: sarebbe da fare col debounce
+    input.addEventListener('keyup', ({ target }) => {
+      let value = target.value;
+      if(value) {
+        target.classList.remove('input--empty');
+      } else {
+        target.classList.add('input--empty');
+      }
+    });
+  </script>
+</body>
+</html>
