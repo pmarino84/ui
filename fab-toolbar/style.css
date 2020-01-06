@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #15af15;
+  --primary-color: #2980b9;
   --primary-text-color: #ffffff;
 }
 
@@ -149,4 +149,8 @@
 .toolbar__content::after, .primary {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
