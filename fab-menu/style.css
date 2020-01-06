@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #2980b9;
+  --primary-text-color: #ffffff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn, .icon, .icon svg, .menu, .menu__item {
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 6px 8px 6px;
+  padding: 8px 16px;
+  font: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background-color: transparent;
+  color: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn--fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .75), 0 3px 6px rgba(0, 0, 0, .25);
+}
+
+.btn-fab .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.btn--fab.btn--small {
+  width: 40px;
+  height: 40px;
+}
+
+.btn--fab.btn--small .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  /* position: relative; */
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu__item {
+  padding: 8px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform .2s cubic-bezier(0, 0, .2, 1);
+}
+
+#toggler {
+  transform: rotate(0deg);
+  transition: transform .2s cubic-bezier(0, 0, .2, 1);
+}
+
+.wrapper--open #toggler {
+  transform: rotate(45deg);
+}
+
+.wrapper--open .menu {
+  opacity: 1;
+}
+
+.wrapper--open .menu__item:nth-child(1) {
+  transform: translate(-50%, -120%);
+}
+
+.wrapper--open .menu__item:nth-child(2) {
+  transform: translate(-50%, -220%);
+}
+
+.wrapper--open .menu__item:nth-child(3) {
+  transform: translate(-50%, -320%);
+}
+
+.wrapper--open .menu__item:nth-child(4) {
+  transform: translate(-50%, -420%);
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
