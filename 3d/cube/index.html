@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D - Cube</title>
+
+  <link rel="stylesheet" href="./cube.css">
+</head>
+<body>
+  <div class="scene">
+    <div class="cube">
+      <div class="face face--front"></div>
+      <div class="face face--back"></div>
+      <div class="face face--right"></div>
+      <div class="face face--left"></div>
+      <div class="face face--top"></div>
+      <div class="face face--bottom"></div>
+    </div>
+  </div>
+
+  <script>
+    const [cube] = document.getElementsByClassName('cube');
+
+    const move = (x, y) => cube.style.transform = `translateZ(-100px) rotateX(${y}deg) rotateY(${x}deg)`;
+
+    const key = {
+      dx: 10,
+      dy: 10
+    };
+    let x = 0;
+    let y = 0;
+    document.addEventListener('keydown', (evt) => {
+      const { code } = evt;
+
+      if (code === 'ArrowLeft') {
+        x -= key.dx;
+      }
+
+      if (code === 'ArrowRight') {
+        x += key.dx;
+      }
+
+      if (code === 'ArrowUp') {
+        y -= key.dy;
+      }
+
+      if (code === 'ArrowDown') {
+        y += key.dy;
+      }
+
+      // console.log(`X: ${x}, Y: ${y}`);
+
+      move(x, y);
+    });
+  </script>
+</body>
+</html>
