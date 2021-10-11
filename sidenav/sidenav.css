@@ -82,9 +82,13 @@
 }
 
 .content {
-  background-color: #476532;
+  background-color: #245db3;
   color: #ffffff;
   transition: margin-left .5s linear;
+}
+
+.content .btn {
+  color: inherit;
 }
 
 /* responsiveness */
