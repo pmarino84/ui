@@ -7,8 +7,30 @@
   <title>3D - Cube</title>
 
   <link rel="stylesheet" href="./cube.css">
+
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    header p {
+      margin: 0;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <p>Use the arrow key to move the cube</p>
+  </header>
   <div class="scene">
     <div class="cube">
       <div class="face face--front"></div>
